@@ -1,9 +1,8 @@
-import React from "react";
-import { ImageType } from "@/utils/types/image";
-import Image from "next/image";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { ImageType } from "@/utils/types/image";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import Image from "next/image";
 
 dayjs.extend(relativeTime);
 
@@ -20,12 +19,12 @@ export default function ImageCard({ image }: { image: ImageType }) {
           />
         </div>
 
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 !m-0 !ml-3 w-full">
           <CardTitle className="text-lg line-clamp-1">{image.name}</CardTitle>
           <p className="text-sm text-muted-foreground">
             {dayjs(image.createdAt).fromNow()}
           </p>
-          <p className="text-[12px] text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             {image?.userName || "Anonymous"}
           </p>
         </div>

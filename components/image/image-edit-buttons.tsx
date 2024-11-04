@@ -1,4 +1,5 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { ImageType } from "@/utils/types/image";
 import { saveAs } from "file-saver";
@@ -25,7 +26,7 @@ export default function ImageEditButtons({ image }: { image: ImageType }) {
     <div className="flex justify-center gap-4">
       <Button
         onClick={handleDownload}
-        className="h-16 w-16 lg:h-20 lg:w-24 flex flex-col items-center justify-center"
+        className="h-16 w-16 lg:h-20 lg:w-20 flex flex-col items-center justify-center"
       >
         <CloudDownload className="h-6 w-6 mb-1" />
       </Button>
