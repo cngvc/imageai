@@ -17,6 +17,10 @@ export default function Home() {
           Creates unique images from text prompts, instantly turning ideas into
           art with just a few words.
         </p>
+        <p>
+          * It doesn't work with VN IPs, please use VPN instead. I will try to
+          fix asap
+        </p>
       </div>
       <GenerateImageInput />
       <div className="relative">
